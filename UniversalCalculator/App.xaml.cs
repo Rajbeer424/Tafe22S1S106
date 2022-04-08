@@ -31,10 +31,7 @@ namespace Calculator
 			{
 				if (rootFrame.Content == null)
 
-					rootFrame.Navigate(typeof(mortgage_calculator), e.Arguments);
-
-					
-
+					rootFrame.Navigate(typeof(main_menu), e.Arguments);
 
 				Window.Current.Activate();
 			}
