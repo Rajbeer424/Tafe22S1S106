@@ -20,6 +20,7 @@
 				<Button x:Name="mortgageButton" Content="Mortgage Calculator" Margin="100,10,10,10" Height="70" Width="250" FontFamily="Arial" FontSize="20" Background="BurlyWood" Foreground="Brown" Click="mortgageButton_Click" ></Button>
 				<Button x:Name="currencyButton" Content="Currency Calculator" Margin="100,10,10,10" Height="70" Width="250" FontFamily="Arial" FontSize="20" Background="BurlyWood" Foreground="Brown" Click="currencyButton_Click" ></Button>
 				<Button x:Name="exitButton" Content="Exit" Margin="100,10,10,10" Height="70" Width="250" FontFamily="Arial" FontSize="20" Background="BurlyWood" Foreground="Brown" Click="exitButton_Click" ></Button>
+				<Button x:Name="tripButton" Click="tripButton_Click" Content="Trip Calculator" Margin="100,10,10,10" Height="70" Width="250" FontFamily="Arial" FontSize="20" Background="BurlyWood" Foreground="Brown"></Button>
 			</StackPanel>
 			<StackPanel Orientation="Vertical">
 				<Image Source="abacus.png" Height="200" Width="200" HorizontalAlignment="Right" Margin="50,120,50,50"></Image>
