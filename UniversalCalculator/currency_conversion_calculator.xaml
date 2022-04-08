@@ -1,0 +1,47 @@
+﻿<Page
+    x:Class="Calculator.currency_conversion_calculator"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Calculator"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+	<Grid Background="Beige">
+		<StackPanel>
+			<StackPanel Orientation="Horizontal">
+				<TextBlock x:Name="currencyTextBlock" Height="100" Margin="250,50,10,10" Text="Currency Conversion Calculator" Width="300" FontSize="20" FontWeight="Bold"/>
+			</StackPanel>
+			<StackPanel Orientation="Horizontal">
+				<TextBlock x:Name="amountTextBlock" Height="50" Width="170" Margin="20,30,10,10" Text="Amount $" FontSize="18" FontWeight="Bold" FontFamily="Arial Narrow"/>
+				<TextBlock x:Name="fromTextBlock"  Height="50" Width="170" Margin="40,30,10,10" Text="From"  FontSize="18" FontWeight="Bold" FontFamily="Arial Narrow"/>
+				<TextBlock x:Name="toTextBlock" Height="50" Width="170" Margin="40,30,10,10" Text="To"  FontSize="18" FontWeight="Bold" FontFamily="Arial Narrow"/>
+			</StackPanel>
+			<StackPanel Orientation="Horizontal">
+				<TextBox x:Name="amountTextBox" Height="50" Margin="20,20,10,10" Text="" Width="170"/>
+				<ComboBox x:Name="fromComboBox" Height="50" Margin="40,20,10,10" Width="170" PlaceholderText="USD- US Dollar">
+					<x:String>US Dollar</x:String>
+					<x:String>Euro</x:String>
+					<x:String>British Pound</x:String>
+					<x:String>Indian Rupee</x:String>
+				</ComboBox>
+				<ComboBox x:Name="toComboBox" Height="50" Margin="40,20,10,10" Width="170" PlaceholderText="GBP- British Pound">
+					<x:String>British Pound</x:String>
+					<x:String>Indian Rupee</x:String>
+					<x:String>US Dollar</x:String>
+					<x:String>Euro</x:String>
+				</ComboBox>
+			</StackPanel>
+
+			<StackPanel Orientation="Horizontal">
+				<TextBlock x:Name="outputTextBlock" Height="100" Margin="30,10,10,10" Text="" TextWrapping="Wrap" Width="300" FontSize="14" FontWeight="Bold"/>
+			</StackPanel>
+			<StackPanel Orientation="Horizontal">
+				<Button x:Name="currencyButton" Content="Currency Conversion" Height="50" Margin="20,20,10,10" Width="250" FontSize="22" FontWeight="Bold" Click="currencyButton_Click"/>
+				<Button x:Name="exitButton" Content="Exit" Height="50" Margin="40,20,10,10"  Width="130" FontSize="22" FontWeight="Bold" Click="exitButton_Click" />
+
+			</StackPanel>
+		</StackPanel>
+	</Grid>
+</Page>
